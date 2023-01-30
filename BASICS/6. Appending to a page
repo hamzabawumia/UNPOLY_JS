@@ -1,0 +1,10 @@
+APPENDING INSTEAD OF REPLACING
+<div class="tasks">
+  <li>Wash car</li>
+  <li>Purchase supplies</li>
+  <li>Fix tent</li>
+</ul>
+
+<a class="next-page" href="/tasks?page=2"
+  up-target=".tasks:after, .next-page">Next page</a>
+This appends the second page to the task list and replaces the "Next page" button with a link to page 3.
