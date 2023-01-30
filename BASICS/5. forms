@@ -8,3 +8,16 @@ A successful submission (status 200) will update .main
 
 A failed submission (non-200 status) will update the form itself
 (Or use an [up-fail-target] attribute)
+
+
+FORMS WITHIN A MODAL
+To stay within the modal, target a selector within the modal:
+
+<form up-target=".selector-within-modal">
+  ...
+</form>
+To close the modal, target a selector behind the modal:
+
+<form up-target=".selector-behind-modal">
+  ...
+</form>
