@@ -1,0 +1,13 @@
+ANIMATION
+When a new element enters the DOM, you can animate the appearance:
+
+<a href="/settings" up-modal=".menu" up-animation="fade-in">
+  Open settings
+</a>
+
+When you swap an element, you can transition between the old and new states:
+
+<a href="/users" up-target=".list" up-transition="cross-fade">
+  Show users
+</a>
+Animations are implemented via CSS transforms on a 3D-accelerated layer.
