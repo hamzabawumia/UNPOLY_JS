@@ -1,0 +1,7 @@
+up.layer a[up-layer=new]. 
+HTML selector. 
+Follows this link and opens the result in a new overlay. 
+
+#Example. 
+
+<a href="/menu" up-layer="new">Open menu</a> ...
