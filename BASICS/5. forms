@@ -1,0 +1,10 @@
+AJAX FORMS
+A form with [up-target] will be submitted via AJAX and leave surrounding elements intact:
+
+<form method="post" action="/users" up-target=".main">
+  ...
+</form>
+A successful submission (status 200) will update .main
+
+A failed submission (non-200 status) will update the form itself
+(Or use an [up-fail-target] attribute)
