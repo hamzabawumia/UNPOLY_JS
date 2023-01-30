@@ -21,3 +21,32 @@ Since we only want to update the <article> tag, we annotate the links with an up
 </nav>
 Note that instead of article you can use any other CSS selector like #main .article.
 
+example:
+
+<div class="1st_div">
+  Card #1 preview
+  <a href="/cards/1" up-target=".card">Show full card #1</a>
+</div>
+
+<div class="card">
+  Card #2 preview
+  <a href="/cards/2" up-target=".1st_div">Show full card #2</a>
+</div>
+
+
+Updating multiple fragments
+You can update multiple fragments from a single request by separating separators with a comma (like in CSS).
+
+For instance, if opening a post should also update a bubble showing the number of unread posts, you might do this:
+
+<a href="/posts/5" up-target=".content, .unread-count">Read post</a>
+
+
+
+Replacing an element's inner HTML
+If you would like to preserve the target element, but replace all of its child content, use the :content pseudo selector:
+
+<a href="/cards/5" up-target=".card:content">Show card #5</a>
+
+
+...
