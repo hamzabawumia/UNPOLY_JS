@@ -1,0 +1,23 @@
+Example
+Let's say we are rendering three pages with a tabbed navigation to switch between screens:
+
+Your HTML could look like this:
+
+<nav>
+  <a href="/pages/a">A</a>
+  <a href="/pages/b">B</a>
+  <a href="/pages/b">C</a>
+</nav>
+
+<article>
+  Page A
+</article>
+Since we only want to update the <article> tag, we annotate the links with an up-target attribute:
+
+<nav>
+  <a href="/pages/a" up-target="article">A</a>
+  <a href="/pages/b" up-target="article">B</a>
+  <a href="/pages/b" up-target="article">C</a>
+</nav>
+Note that instead of article you can use any other CSS selector like #main .article.
+
