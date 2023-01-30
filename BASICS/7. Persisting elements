@@ -1,0 +1,14 @@
+PERSISTING ELEMENTS
+<div class="story">
+
+  <video up-keep src="movie.mp4"></video>
+
+  <p>Story summary</p>
+
+  <a href="full.html" up-target=".story">
+    Read full story
+  </a>
+
+</div>
+
+up-keep - will keep that element
