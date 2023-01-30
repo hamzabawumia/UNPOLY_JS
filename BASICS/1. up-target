@@ -1,4 +1,28 @@
 Example
+
+
+
+<div class="story">
+
+  <p>Story summary</p>
+
+  <a href="full.html" up-target=".story">
+    Read full story
+  </a>
+
+</div>
+
+<p>This text won't change</p>
+
+EXPLANATION:
+Unpoly requests full.html via AJAX
+Server renders a full HTML page
+Unpoly extracts the fragment that matches .story
+Unpoly swaps the old and new fragment
+Unpoly changes the browser URL to http://host/full.html
+
+
+Example 2
 Let's say we are rendering three pages with a tabbed navigation to switch between screens:
 
 Your HTML could look like this:
